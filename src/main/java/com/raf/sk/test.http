@@ -1,0 +1,10 @@
+POST http://localhost:8001/api/sendMail
+Content-Type: application/json
+
+{
+  "recipient" : "aaleksic97rn@raf.rs",
+  "msgBody" : "Nije pretjerano tesko\n moramo ove dto da sredimo \n onda ce biti bruka ali ovo ima jako\npuno smisla",
+  "subject" : "Opis"
+}
+
+###
