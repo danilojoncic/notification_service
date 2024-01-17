@@ -24,7 +24,7 @@ public class EmailListener {
     public void register(Message message) throws JMSException {
         NotificationMQ<?> notificationMQ = messageHelper.getMessage(message, NotificationMQ.class);
         AdditionDto additionDto = objectMapper.convertValue(notificationMQ.getData(), AdditionDto.class);
-        emailService.sendMail(additionDto.getEmail(), "Welcome to RAF car!", "Pozdrav novi korisnice : " + additionDto.getName(), 1L, additionDto.getEmail());
+        emailService.sendMail(additionDto.getEmail(), "Welcome to Workout Station", "Hello user : " + additionDto.getName() + "\n ako si mislio da ces morati da kliknes neki link, nema toga ovdje preposteni/a moj", 1L, additionDto.getEmail());
     }
 
 //    @JmsListener(destination = "changepassword", concurrency = "5-10")
