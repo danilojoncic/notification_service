@@ -17,7 +17,6 @@ public class NotificationController {
 
     @PostMapping("/send")
     private void posalji(){
-        emailService.sendMail("djoncic14122rn@raf.rs","Pozdrav","Cao",null,"djoncic14122rn@raf.rs");
+        emailService.sendMail("use your own","use your own","use your own",null,"use your own");
     }
-
 }
